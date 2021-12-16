@@ -1,3 +1,5 @@
+//Stack implementation using arrays in cpp
+
 #include <iostream>
 
 using namespace std;
