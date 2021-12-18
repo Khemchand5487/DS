@@ -11,7 +11,6 @@ int evaluate(char o, int op1, int op2){
         case '-': return op1-op2;
         case '/': return op1/op2;
         case '*': return op1*op2;
-        case '^': return pow(op1,op2);
         default : return 0;
     }
 }
@@ -19,8 +18,8 @@ int evaluate(char o, int op1, int op2){
 void evaluatePostfix(string exps)
 {
     unordered_map<char, int> opr;
-    string str = "*/-+^";
-    for(int i =0;i<5;i++)
+    string str = "*/-+";
+    for(int i =0;i<4;i++)
     {
         opr[str[i]] = 1;
     }
