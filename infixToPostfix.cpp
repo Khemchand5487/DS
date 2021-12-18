@@ -63,7 +63,7 @@ bool HasHigherprec(char c1, char c2)
     return m[c1]>=m[c2];
 }
 
-string postToInfix(string exps)
+string infixToPostfix(string exps)
 {
     stack<char> s;
     string res = "";
